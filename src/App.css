@@ -1,0 +1,38 @@
+body{
+  background-color: #747f9c;
+}
+.pounds{
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  text-align: center;
+ 
+}
+.split{
+  display: flex;
+  flex-direction: row;
+}
+.left{
+  width: 50vw;
+}
+.right{
+  width:50vw;
+}
+
+.container {
+  display: flex;
+  background-color: rgb(233, 222, 218);
+  flex-direction: column;
+  margin:10% 30%;
+  align-content: center;
+  border: 3px solid black;
+  border-radius: 15%;
+}
+
+@media screen and(max-width:600px) {
+  .container {
+    border: 3px solid green;
+  }
+}
