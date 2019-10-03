@@ -22,10 +22,10 @@ export default function GasMeter() {
 
   return (
     <div className="container">
-      <div>Enter original reading here
-        <input type="number" onBlur={(e) => SetUnit(e.target.value)}></input></div>
-      <div>Enter current reading:
-        <input type="number" onBlur={(e) => GUnitUsed(e.target.value)}></input></div>
+      <div>Original reading
+        <input type="number" placeholder="Original Reading Here" onBlur={(e) => SetUnit(e.target.value)}></input></div>
+      <div>Current reading:
+        <input type="number" placeholder="Current Reading Here" onBlur={(e) => GUnitUsed(e.target.value)}></input></div>
       <button onClick={(e) => sums(e)}>Calculate Bill</button>
       <div>£{Bill}</div>
     </div>
